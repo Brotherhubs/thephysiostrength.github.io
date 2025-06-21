@@ -1,0 +1,63 @@
+
+import { Plan } from '../types';
+
+export const physioPlans: Plan[] = [
+  {
+    id: 'regular',
+    name: 'Daily Session',
+    description: 'Perfect for first time visit, regular sessions',
+    price: 600,
+    noOfSessions: "Single Session",
+    currencySymbol: '₹',
+    colorScheme: {
+      bg: 'bg-sky-50',
+      border: 'border-sky-400',
+      text: 'text-sky-800',
+      buttonBg: 'bg-sky-500',
+      buttonText: 'text-white',
+      buttonHoverBg: 'hover:bg-sky-600',
+      bestValueBadgeBg: 'bg-yellow-400',
+      bestValueBadgeText: 'text-gray-900',
+    },
+  },
+  {
+    id: 'lite',
+    name: 'Lite',
+    description: 'A structured plan of 10 sessions for consistent progress and lasting results',
+    price: 5000,
+    currencySymbol: '₹',
+    noOfSessions: "10 Sessions",
+    colorScheme: {
+      bg: 'bg-green-50',
+      border: 'border-green-500',
+      text: 'text-green-800',
+      buttonBg: 'bg-green-500',
+      buttonText: 'text-white',
+      buttonHoverBg: 'hover:bg-green-600',
+      bestValueBadgeBg: 'bg-yellow-300',
+      bestValueBadgeText: 'text-gray-800',
+      featureHighlightBg: 'bg-green-100',
+      featureHighlightText: 'text-green-700',
+    },
+  },
+  {
+    id: 'basic',
+    name: 'Basic',
+    description: 'A structured plan of 15 sessions for consistent progress and lasting results',
+    price: 7500,
+    currencySymbol: '₹',
+    noOfSessions: "15 Sessions",
+    colorScheme: {
+      bg: 'bg-purple-50',
+      border: 'border-purple-400',
+      text: 'text-purple-800',
+      buttonBg: 'bg-purple-500',
+      buttonText: 'text-white',
+      buttonHoverBg: 'hover:bg-purple-600',
+      bestValueBadgeBg: 'bg-yellow-400',
+      bestValueBadgeText: 'text-gray-900',
+      featureHighlightBg: 'bg-purple-100',
+      featureHighlightText: 'text-purple-700',
+    },
+  },
+];

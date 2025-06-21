@@ -1,0 +1,5 @@
+{
+  "name": "Physio Plans Showcase",
+  "description": "A web application displaying pricing plans for physiotherapy services, built with React and Tailwind CSS. Users can toggle between annual and monthly billing.",
+  "requestFramePermissions": []
+}
