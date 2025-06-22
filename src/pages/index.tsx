@@ -55,7 +55,7 @@ export default function App({ plans, heroSlides }: { plans: Plan[], heroSlides: 
       </Head>
       <div className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-gradient-to-br from-slate-100 to-sky-100`} >
         <Header />
-        <main >
+        <main className="bg-sky-50">
           <HeroCarousel slides={heroSlides} />
           {/* What We Treat Section */}
           <PlanCards plans={plans} />

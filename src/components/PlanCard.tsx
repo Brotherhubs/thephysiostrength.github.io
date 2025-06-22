@@ -42,7 +42,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan }) => {
         className={`w-full py-3 px-4 rounded-lg font-semibold text-center transition-colors duration-200 border 
                    mt-auto ${plan.colorScheme.buttonBg} ${plan.colorScheme.buttonText} 
                    hover:${plan.colorScheme.buttonHoverBg} border-black/20 
-                   focus:ring-2 focus:ring-offset-2 ${plan.colorScheme.border}`}
+                   focus:ring-2 focus:ring-offset-2 ${plan.colorScheme.border} cursor-pointer`}
         onClick={() => window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=Hello! I'm interested in the ${plan.name} plan.`, '_blank')}
         aria-label={`Chat on WhatsApp about the ${plan.name} plan`}
       >

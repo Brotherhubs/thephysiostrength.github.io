@@ -32,7 +32,7 @@ const OurTestimonials: React.FC<OurTestimonialsProps> = ({ testimonials }) => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="py-12 md:py-16 bg-sky-50">
+    <section className="py-12 md:py-16 bg-sky-100">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 tracking-tight">
