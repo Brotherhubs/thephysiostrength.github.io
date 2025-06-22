@@ -30,8 +30,6 @@ export default function App({ plans, heroSlides }: { plans: Plan[], heroSlides: 
   return (
     <>
       <Head>
-        <title>The Physio Strength Wellness Center | NCR | NOIDA | DELHI</title>
-        <meta name="description" content="The Physio Strength Wellness Center" />
         <title>Expert Physiotherapy at Home & Clinic | The Physio Strength Wellness Center</title>
         <meta name="description" content="Regain strength and live pain-free with The Physio Strength Wellness Center. We offer expert physiotherapy for neuro, ortho, and sports injuries at our clinic or in the comfort of your home." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
