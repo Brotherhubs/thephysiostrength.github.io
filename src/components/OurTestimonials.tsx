@@ -4,6 +4,7 @@ import ChevronLeftIcon from './icons/ChevronLeftIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 import StarRating from './StarRating';
 import Image from 'next/image';
+import nextConfig from '../../next.config';
 
 interface OurTestimonialsProps {
   testimonials: Testimonial[];
@@ -45,7 +46,9 @@ const OurTestimonials: React.FC<OurTestimonialsProps> = ({ testimonials }) => {
         <div className="relative">
           <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 min-h-[300px] md:min-h-[280px] flex flex-col items-center text-center">
             <Image
-              src={currentTestimonial.imageUrl}
+              width={120}
+              height={120}
+              src={nextConfig.basePath + currentTestimonial.imageUrl}
               alt={`Photo of ${currentTestimonial.name}`}
               className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover mb-4 border-4 border-sky-200 shadow-md"
             />
@@ -66,7 +69,7 @@ const OurTestimonials: React.FC<OurTestimonialsProps> = ({ testimonials }) => {
               </p>
             </blockquote>
           </div>
-          
+
           {testimonials.length > 1 && (
             <>
               <button
@@ -85,9 +88,9 @@ const OurTestimonials: React.FC<OurTestimonialsProps> = ({ testimonials }) => {
               </button>
             </>
           )}
-           <div className="sr-only" aria-live="polite" aria-atomic="true">
-             {`Testimonial ${currentIndex + 1} of ${testimonials.length}: ${currentTestimonial.name} says, "${currentTestimonial.testimonial}"`}
-           </div>
+          <div className="sr-only" aria-live="polite" aria-atomic="true">
+            {`Testimonial ${currentIndex + 1} of ${testimonials.length}: ${currentTestimonial.name} says, "${currentTestimonial.testimonial}"`}
+          </div>
         </div>
       </div>
     </section>

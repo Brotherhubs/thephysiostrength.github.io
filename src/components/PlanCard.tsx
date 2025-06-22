@@ -1,6 +1,7 @@
 import React from 'react';
 import { Plan } from '../types';
 
+const WHATSAPP_NUMBER = '919927772973';
 
 interface PlanCardProps {
   plan: Plan;
@@ -42,7 +43,7 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan }) => {
                    mt-auto ${plan.colorScheme.buttonBg} ${plan.colorScheme.buttonText} 
                    hover:${plan.colorScheme.buttonHoverBg} border-black/20 
                    focus:ring-2 focus:ring-offset-2 ${plan.colorScheme.border}`}
-        // onClick={() => window.open(`https://wa.me/YOUR_PHONE_NUMBER?text=Hello! I'm interested in the ${plan.name} plan.`, '_blank')}
+        onClick={() => window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=Hello! I'm interested in the ${plan.name} plan.`, '_blank')}
         aria-label={`Chat on WhatsApp about the ${plan.name} plan`}
       >
         Chat on WhatsApp

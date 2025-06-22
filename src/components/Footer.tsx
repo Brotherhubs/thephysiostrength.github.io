@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import WhatsAppIcon from './icons/WhatsAppIcon';
+import GoogleMapsIcon from './icons/GoogleMapsIcon';
 
 // SVG Icon components for social media
 // const _FacebookIcon = () => (
@@ -31,6 +32,7 @@ export default function Footer() {
   const WHATSAPP_NUMBER = '919927772973'; // Replace with your actual WhatsApp number
   const WHATSAPP_MESSAGE = "Hello! I'm interested in your physiotherapy services.";
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  const googleMapsUrl = 'https://maps.app.goo.gl/TxnCp5YUC7KGiZwP8';
 
   return (
     <footer className="bg-gray-800 text-gray-300">
@@ -50,7 +52,7 @@ export default function Footer() {
           {/* Sitemap Links */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Sitemap</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm ml-2">
               <li><Link href="/" className="hover:text-sky-400 transition-colors">Home</Link></li>
               {/* <li><Link href="/about" className="hover:text-sky-400 transition-colors">About Us</Link></li> */}
               {/* <li><Link href="/blog" className="hover:text-sky-400 transition-colors">Blog</Link></li> */}
@@ -82,6 +84,16 @@ export default function Footer() {
             >
               <WhatsAppIcon />
               Chat on WhatsApp
+            </a>
+            <a
+              href={googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-7 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors mt-2"
+              aria-label="Open location on Google Maps"
+            >
+              <GoogleMapsIcon />
+              Find Us on Map
             </a>
           </div>
         </div>

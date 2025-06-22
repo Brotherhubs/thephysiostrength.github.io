@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { HeroSlideData } from '../types';
 import Image from 'next/image';
+import nextConfig from '../../next.config';
 
 interface HeroCarouselProps {
   slides: HeroSlideData[];
@@ -39,7 +40,9 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ slides, autoplayInterval = 
         {slides.map((slide) => (
           <div key={slide.id} className="w-full h-full flex-shrink-0 relative">
             <Image
-              src={slide.imageUrl}
+              fill={true}
+              style={{ objectFit: 'cover' }}
+              src={nextConfig.basePath + slide.imageUrl}
               alt={slide.title}
               className="w-full h-full object-cover"
               aria-hidden={slide.id !== slides[currentIndex].id}
