@@ -13,6 +13,7 @@ import PatientConvenience from "@/components/PatientConvenience";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import OurTestimonials from "@/components/OurTestimonials";
 import FloatingActionButtons from "@/components/FloatingActionButtons";
+import nextConfig from '../../next.config';
 // import LocationMap from "@/components/LocationMap";
 
 // const sampleClinicLocation = "Apollo Physiotherapy Center, Andheri West, Mumbai, Maharashtra 400058";
@@ -35,15 +36,14 @@ export default function App({ plans, heroSlides }: { plans: Plan[], heroSlides: 
         <meta name="description" content="Regain strength and live pain-free with The Physio Strength Wellness Center. We offer expert physiotherapy for neuro, ortho, and sports injuries at our clinic or in the comfort of your home." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://www.your-domain.com/" />
-
+        <link rel="icon" href={`${nextConfig.basePath}/favicon.svg`} type="image/svg+xml" />
+        <link rel="canonical" href="https://www.thephysiostrength.com/" />
         {/* --- Open Graph / Facebook --- */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.your-domain.com/" />
+        <meta property="og:url" content="https://www.thephysiostrength.com/" />
         <meta property="og:title" content="Expert Physiotherapy at Home & Clinic | The Physio Strength Wellness Center" />
         <meta property="og:description" content="Regain strength and live pain-free with The Physio Strength Wellness Center. We offer expert physiotherapy for neuro, ortho, and sports injuries." />
-        <meta property="og:image" content="https://www.your-domain.com/og-image.png" />
+        <meta property="og:image" content={`https://www.thephysiostrength.com/${nextConfig.basePath}/images/medical-assistant-helping-patient-with-physiotherapy-exercises.jpg`} />
         <meta property="og:site_name" content="The Physio Strength Wellness Center" />
 
         {/* --- Twitter --- */}
@@ -79,4 +79,3 @@ export async function getStaticProps() {
 
   return { props: { plans, heroSlides } }
 }
-
