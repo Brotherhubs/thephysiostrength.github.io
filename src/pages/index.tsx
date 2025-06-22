@@ -12,6 +12,7 @@ import { conditionsData, symptomsData, testimonialData } from "@/data/main";
 import PatientConvenience from "@/components/PatientConvenience";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import OurTestimonials from "@/components/OurTestimonials";
+import FloatingActionButtons from "@/components/FloatingActionButtons";
 // import LocationMap from "@/components/LocationMap";
 
 // const sampleClinicLocation = "Apollo Physiotherapy Center, Andheri West, Mumbai, Maharashtra 400058";
@@ -65,6 +66,7 @@ export default function App({ plans, heroSlides }: { plans: Plan[], heroSlides: 
           {/* <LocationMap location={sampleClinicLocation} title="Visit Our Clinic"  mapFrameTitle={`Map showing location of clinic at ${sampleClinicLocation}`} */}
         </main>
         <Footer />
+        <FloatingActionButtons />
       </div>
     </>
   );
