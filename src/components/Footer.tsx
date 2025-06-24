@@ -32,7 +32,7 @@ export default function Footer() {
   const WHATSAPP_NUMBER = '919927772973'; // Replace with your actual WhatsApp number
   const WHATSAPP_MESSAGE = "Hello! I'm interested in your physiotherapy services.";
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
-  const googleMapsUrl = 'https://maps.app.goo.gl/TxnCp5YUC7KGiZwP8';
+  const googleMapsUrl = 'https://maps.app.goo.gl/3XdtJtBqosiuKiBr7';
 
   return (
     <footer className="bg-sky-800 text-gray-300">
