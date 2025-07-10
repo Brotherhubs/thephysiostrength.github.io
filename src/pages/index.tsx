@@ -58,12 +58,26 @@ export default function App({ plans, heroSlides }: { plans: Plan[], heroSlides: 
         <main className="bg-sky-50">
           <HeroCarousel slides={heroSlides} />
           {/* What We Treat Section */}
-          <PlanCards plans={plans} />
-          <WhatWeTreat conditions={conditionsData} symptoms={symptomsData} />
           <WhyChooseUs />
+          <WhatWeTreat conditions={conditionsData} symptoms={symptomsData} />
           <PatientConvenience /> {/* Add the new component here */}
+          <PlanCards plans={plans} />
           <OurTestimonials testimonials={testimonialData} />
           {/* <LocationMap location={sampleClinicLocation} title="Visit Our Clinic"  mapFrameTitle={`Map showing location of clinic at ${sampleClinicLocation}`} */}
+          {/* SEO Keywords */}
+          <div className="sr-only">
+            <h2>Physiotherapy Services and Treatments in Noida</h2>
+            <p>
+              Best physiotherapist in Noida, physiotherapy clinic near me, top physiotherapist in Noida Sector 119,
+              home visit physiotherapy Noida, sports injury treatment Noida, neuro physiotherapy near me,
+              orthopedic physiotherapy Noida, chiropractor in Noida, dry needling therapy Noida,
+              kinesiology taping Noida, back pain treatment Noida, knee pain physiotherapy near me,
+              shoulder pain specialist Noida, post-surgery rehabilitation Noida, pediatric physiotherapy Noida.
+              Affordable physiotherapy plans and offers. Expert care for varicose veins, baker's cyst, PCL injury,
+              LCL injury, MCL injury, patellar dislocation, sports hernia, and frozen shoulder.
+              Treatment for muscle spasm, tremors, joint pain, foot pain, sprains, and neck stiffness.
+            </p>
+          </div>
         </main>
         <Footer />
         <FloatingActionButtons />

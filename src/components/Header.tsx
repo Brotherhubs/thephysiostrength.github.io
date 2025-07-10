@@ -47,6 +47,9 @@ export default function Header() {
           </Link>
         </div>
         <div className="hidden md:flex items-center space-x-8">
+          <Link href="/#treatment-plans" className="font-medium text-sky-100 hover:text-white transition-colors duration-200">
+            Treatment Plans
+          </Link>
           {/* Blog Dropdown */}
           <div className="relative" ref={blogMenuRef}>
             {/* <button
@@ -100,6 +103,9 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-sky-700 shadow-lg z-40">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <Link href="/#treatment-plans" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-sky-100 hover:text-white hover:bg-sky-600">
+              Treatment Plans
+            </Link>
             {/* <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-sky-100 hover:text-white hover:bg-sky-600">
               About Us
             </Link>

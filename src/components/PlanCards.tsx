@@ -3,7 +3,7 @@ import { Plan } from '@/types';
 
 export default function PlanCards({ plans }: { plans: Plan[] }) {
   return (
-    <>
+    <section id="treatment-plans" className="scroll-mt-20 max-w-7xl mx-auto">
       <div className="text-center mt-10 mb-10 md:mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-sky-800 tracking-tight">
           Physiotherapy Treatment Plans
@@ -14,6 +14,6 @@ export default function PlanCards({ plans }: { plans: Plan[] }) {
           <PlanCard key={plan.id} plan={plan} />
         ))}
       </div>
-    </>
+    </section>
   )
 }
