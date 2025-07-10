@@ -73,7 +73,7 @@ export default function App({ plans, heroSlides }: { plans: Plan[], heroSlides: 
               orthopedic physiotherapy Noida, chiropractor in Noida, dry needling therapy Noida,
               kinesiology taping Noida, back pain treatment Noida, knee pain physiotherapy near me,
               shoulder pain specialist Noida, post-surgery rehabilitation Noida, pediatric physiotherapy Noida.
-              Affordable physiotherapy plans and offers. Expert care for varicose veins, baker's cyst, PCL injury,
+              Affordable physiotherapy plans and offers. Expert care for varicose veins, baker cyst, PCL injury,
               LCL injury, MCL injury, patellar dislocation, sports hernia, and frozen shoulder.
               Treatment for muscle spasm, tremors, joint pain, foot pain, sprains, and neck stiffness.
             </p>
@@ -85,7 +85,6 @@ export default function App({ plans, heroSlides }: { plans: Plan[], heroSlides: 
     </>
   );
 }
-
 
 export async function getStaticProps() {
   const plans = physioPlans;
